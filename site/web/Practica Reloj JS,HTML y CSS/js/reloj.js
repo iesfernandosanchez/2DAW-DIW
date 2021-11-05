@@ -8,8 +8,8 @@ window.onload = function () {
 
     let lis = '';
     for(let i=0;i<60;i++){
-        lis += '<li></li>';
-        css.innerHTML += "#list li:nth-of-type("+(i+1)+")(transform:rotate("+i*6+"deg)}"
+        lis += '<li><li>';
+        css.innerHTML += "#list li:nth-of-type("+(i+1)+"){transform:rotate("+i*6+"deg)}"
     }
     list.innerHTML = lis;
     time();
