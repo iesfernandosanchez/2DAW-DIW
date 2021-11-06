@@ -768,6 +768,7 @@ address,.subscribe > p {
     box-shadow: none;
     color: #c8c8c8;
     height: 42px;
+    margin-bottom: 5px !important;
 }
 .form-control:focus {
     border: 2px solid #66afe9;
