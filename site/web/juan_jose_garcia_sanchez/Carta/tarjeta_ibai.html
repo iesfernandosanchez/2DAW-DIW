@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+
+    .contorno {
+        width: 350px;
+        height: 550px;
+        margin-left: 500px;
+        border: solid;
+        border-radius: 20px;
+        animation-name: rgb;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    .interior_contorno {
+        background: url("ladrillos.jpg");
+        display: block;
+        height: 500px;
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-top: 25px;
+        border-radius: 25px;
+    }
+
+    .imagen {
+        border-radius: 150px;
+        margin-left: 100px;
+        border: solid;
+        elevation: 10deg;
+    }
+
+    @font-face {
+        font-family: "PressStart";
+        src: url("PressStart2P-Regular.ttf");
+    }
+
+    .title {
+        font-family: PressStart;
+        color: white;
+        margin-left: 20px;
+        animation-name: rgb;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    .descripcion {
+        color: white;
+        font-family: Candara;
+        font-size: 12px;
+        text-align: center;
+        opacity: 100%;
+        border-radius: 30px;
+
+    }
+
+    .descripcionContorno {
+        background-color: darkgrey;
+        width: 250px;
+        height: 100px;
+        border: solid;
+        border-radius: 30px;
+        margin-left: 25px;
+        margin-top: 35px;
+    }
+
+    .puntoFuerte {
+        color: white;
+        margin-left: 30px;
+        font-family: Candara;
+        background-color: orange;
+        width: 120px;
+        margin-top: 30px;
+
+    }
+
+    .puntuacion {
+        color: white;
+        margin-left: 8px;
+        font-family: Candara;
+        background-color: red;
+        width: 20px;
+    }
+
+    @keyframes rgb {
+        0% {
+            color: #0010ff;
+        }
+        5% {
+            color: #4100ff;
+        }
+        10% {
+            color: #8800ff;
+        }
+        15% {
+            color: #be00ff;
+        }
+        20% {
+            color: #e600ff;
+        }
+        25% {
+            color: #ff00f8;
+        }
+        30% {
+            color: #ff00d2;
+        }
+        35% {
+            color: #ff00aa;
+        }
+        40% {
+            color: #ff0079;
+        }
+        45% {
+            color: #ff0042;
+        }
+        50% {
+            color: #ff0011;
+        }
+        55% {
+            color: #ff2700;
+        }
+        60% {
+            color: #ff5c00;
+        }
+        65% {
+            color: #ff8700;
+        }
+        70% {
+            color: #ffa900;
+        }
+        75% {
+            color: #ffcf00;
+        }
+        80% {
+            color: #fffe00;
+        }
+        85% {
+            color: #c3ff00;
+        }
+        90% {
+            color: #77ff00;
+        }
+        93% {
+            color: #30ff00;
+        }
+        97% {
+            color: #00ffac;
+        }
+        100% {
+            color: #0010ff;
+        }
+
+    }
+</style>
+
+
+<div>
+
+    <div id="cromo">
+        <div class="contorno" id="contorno">
+            <div class="interior_contorno" id="interiorContorno">
+                <div>
+                    <img class="imagen" src="ibai.jpg" height="100" width="100"/>
+                    <h2 class="title">IBAI LLANOS</h2>
+                    <div id="puntosFuertes">
+                        <h2 style="margin-left: 10px" class="puntoFuerte">STREAMER<span class="puntuacion">98</span>
+                        </h2>
+                        <h2 style="margin-left: 30px;width: 140px" class="puntoFuerte">MILLONARIO<span
+                                class="puntuacion">100</span></h2>
+                        <h2 style="margin-left: 50px;width: 170px" class="puntoFuerte">COMENTARISTA<span
+                                class="puntuacion">98</span></h2>
+                    </div>
+                    <div id="descripcionContorno" class="descripcionContorno">
+                        <p class="descripcion">
+                            Ibai Llanos, nacido en Bilbao en 1995, es una de las figuras más reconocidas en el mundo de
+                            Twitch y los eSports tanto a nivel nacional como internacional, pero su influencia no se
+                            termina ahí
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
