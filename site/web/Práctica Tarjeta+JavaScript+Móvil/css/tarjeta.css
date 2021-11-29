@@ -1,0 +1,83 @@
+html body {
+    text-align: center;
+    color: white;
+    background-color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#carta {
+    margin: auto;
+    max-width: 95%;
+    border: 0.3em solid blue;
+    border-radius: 2em;
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-position: center center;
+    width: 95%;
+    height: auto;
+}
+
+#carta h2 {
+    font-weight: 1em;
+    text-shadow: 2px 2px 0 #AAA, 4px 4px 1px #777, 6px 6px 4px #444;
+}
+
+#foto {
+    width: auto;
+    height: auto;
+    border-radius: 160px;
+    border: 5px solid #fbdfd9;
+}
+
+#escudo {
+    width: 10%;
+    height: 10%;
+}
+
+#contenedor {
+    text-align: left;
+    padding: 5px;
+}
+
+#datos {
+    position: absolute;
+    top: 32%;
+    width: 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    color: black;
+    font-weight: bold;
+}
+
+#datos div {
+    box-shadow: 0px 5px 15px goldenrod inset;
+}
+
+.itemI {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding: 1px 4px 1px 4px;
+    width: 99%;
+    background-color: green;
+}
+
+.itemD {
+    text-align: right;
+    margin-bottom: 5px;
+    padding: 1px 4px 1px 4px;
+    width: 99%;
+    background-color: greenyellow;
+}
+
+#descripcion {
+    padding: 5px;
+    text-align: justify;
+}
+
+.letrasNaranjas {
+    color: #ff9000 !important;
+}
+
+.fondoRojo {
+    background-color: red !important;
+}
