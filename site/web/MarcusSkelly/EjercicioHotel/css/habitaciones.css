@@ -1,0 +1,23 @@
+h1{
+    font-family: 'Festive';
+    text-align: center;
+    border: solid;
+    width: 100%;
+    justify-content: center;
+
+    
+    background: #aaa;
+
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    box-shadow: 10px 10px 5px #999;
+
+}
+
+.habitacion1{
+    width: 99%;
+    height: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: aquamarine;
+}

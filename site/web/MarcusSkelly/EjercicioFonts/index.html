@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <style>
+        
+        h1{
+            font-family: 'Festive';
+            text-align: center;
+            border: solid;
+            width: 50%;
+            justify-content: center;
+
+            margin-left: 25%;
+            margin-right: 25%;
+            background: #aaa;
+
+            -webkit-box-shadow: 2px 2px 5px #999;
+            -moz-box-shadow: 2px 2px 5px #999;
+            box-shadow: 10px 10px 5px #999;
+
+        }
+
+        .principal{
+            width: 80%;
+            height: 200px;
+            border: solid;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .primeraCaja{
+
+            width: 50%;
+            float: left;
+            border: solid;
+            
+        }
+
+        #listado > li{
+            font-family: 'Lobster';
+
+
+        }
+
+        .segundaCaja{
+        border: solid;
+        width: 50%;
+        }
+
+        .icono-happy{
+            background-position: -191px 213px;
+        }
+
+        [class*="icono-"]{
+            background-image: url("img/emojis.jpg");
+            height: 21px;
+            width: 21px;
+            display: inline-block;
+        }
+
+        .icono-monkey{
+            background-position: -245px 213px;
+        }
+
+        body{
+            background-image: url("img/image.jpg");
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Hola mundo</h1>
+
+<div class="principal">
+
+    <div class="primeraCaja">
+
+    <ul id="listado">
+        <li><i class="icono-happy"></i>Primer Ingrediente</li>
+        <li><i class = "icono-monkey"></i>Segundo Ingrediente</li>
+    </ul>
+
+    </div>
+
+    <div class="segundaCaja">
+
+    <ol>
+        <li>Primer sector</li>
+        <li>Segundo sector</li>
+    </ol>
+
+    </div>
+    
+</div>
+
+</body>
+</html>

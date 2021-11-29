@@ -1,0 +1,42 @@
+div[class^='col-']{
+    border: 2px solid white;
+  }
+
+.row{
+    padding: 5px;
+}
+
+.my-row{
+    height: 50px;
+}
+.my-row2{
+    height: 350px;
+    
+
+}
+
+.my-row3{
+    height: 100px;
+    
+}
+
+.my-row4{
+    height: 100px;
+    
+}
+
+.my-row5{
+    height: 50px;
+
+}
+
+.red-row{
+    height: 50px;
+
+    background-color: red;
+}
+
+
+
+
+

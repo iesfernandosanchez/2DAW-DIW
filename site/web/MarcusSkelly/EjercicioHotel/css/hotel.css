@@ -1,0 +1,61 @@
+h1{
+    font-family: 'Festive';
+    text-align: center;
+    border: solid;
+    width: 100%;
+    justify-content: center;
+
+    
+    background: #aaa;
+
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    box-shadow: 10px 10px 5px #999;
+
+}
+
+
+
+    .principal{
+        width: 99%;
+        height: 600px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: aquamarine;
+        background-image: url("hotel.jpg");
+    }
+
+    .principal > img{
+        height: 96%;
+    }
+
+    .primeraCaja{
+
+        width: 40%;
+        height: 570px;
+        float: left;
+        border: solid;
+        padding: 10px;
+        
+    }
+
+    .primeraCaja > h2{
+
+        font-size: 40px;
+        border: solid;
+        background: #aaa;
+    }
+
+    .primeraCaja > img{
+
+        
+        border: solid;
+        
+        margin-top: 20px;
+    }
+
+    table{
+        border: solid;
+        
+    }
+    
