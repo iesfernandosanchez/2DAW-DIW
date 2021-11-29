@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue"/>
+    <style>
+
+        .carta {
+            font-family: Bebas Neue, serif;
+            width: 23%;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            border-width: 10px;
+            border-color: #cacaca;
+            border-style: solid;
+            border-radius: 25px;
+            padding: 10px;
+            background: url("img/Fondo.jpg");
+            background-size: auto
+        }
+
+        .carta > .title {
+            color: white;
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+            text-align: center;
+            animation-name: glow;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes glow {
+            0%{
+                text-shadow: 0 0 10px red;
+            }
+            50%{
+                text-shadow: 0 0 10px blue;
+            }
+            100%{
+                text-shadow: 0 0 10px red;
+            }
+        }
+
+        .carta > .img {
+            max-height: 100%;
+            max-width: 70%;
+            display: block;
+            margin: auto;
+            animation-name: brillo;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes brillo {
+            0%{
+                opacity: 60%;
+            }
+            50%{
+                opacity: 100%;
+            }
+            100%{
+                opacity: 60%;
+            }
+        }
+
+        .carta > .stats {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+            margin: 0 0 25px;
+            padding: 10px;
+            width: 43%;
+            float: left;
+        }
+
+        .defensiva {
+            background: #d30a0a;
+            border: 2px solid #9f0606;
+            border-radius: 35px 0 0 0;
+        }
+
+        .ofensiva {
+            background: #19d009;
+            border: 2px solid #14ab09;
+            border-radius: 0 35px 0 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="carta">
+
+    <h1 class="title">
+        Cristiano Ronaldo
+    </h1>
+
+    <img class="img" src="img/Cristiano.png"/>
+
+    <span class="stats defensiva">
+            100
+        </span>
+    <span class="stats ofensiva">
+            100
+        </span>
+
+    <img class="img" src="img/PaniniLogo.png" style="width: 30%"/>
+
+</div>
+
+</body>
+</html>
