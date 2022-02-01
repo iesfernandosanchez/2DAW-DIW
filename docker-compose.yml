@@ -17,7 +17,7 @@ services:
         volumes:
             - ./site/:/var/www/${PROJECT}/
         ports:
-            - 8006:8006
+            - 80:80
         networks:
             - diw2daw
 
@@ -29,4 +29,4 @@ networks:
         driver: bridge
         ipam:
             config:
-                - subnet: 172.201.0.0/16
+                - subnet: 172.200.0.0/16
