@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro 2EV - Editar receta</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <script src="js/token-autocomplete.js"></script>
+    <link href="css/token-autocomplete.css" rel="stylesheet" type="text/css" media="all">
+    
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="g-3 needs-validation mt-5" novalidate>
+            
+            <div class="row m-3">
+                <div class="col-12 m-auto">
+                    <label for="validationNombre" class="form-label">Nombre de receta</label>
+                    <input type="text" class="form-control" id="validationNombre" placeholder="Nombre de receta..." required>
+                    <div class="valid-feedback">
+                        Es correcto!
+                    </div>
+                    <div class="invalid-feedback">
+                        No es correcto!
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row m-3">
+                <div class="col-12 m-auto">
+                    <label for="validationTexto" class="form-label">Descripción de la receta</label>
+                    <div class="input-group">
+                        <!-- TinyMCE Editor -->
+                        <textarea class="form-control" id="validationTexto" required></textarea><!-- End TinyMCE Editor -->
+                        <div class="valid-feedback">
+                            Es correcto!
+                        </div>
+                        <div class="invalid-feedback">
+                            No es correcto!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row m-3">
+            <div class="col-6 m-auto">
+                <label for="sample3" class="form-label">Tags:</label>
+                <div id="sample3" class="form-control"></div>
+            </div>
+            <div class="col-6 m-auto">
+                <label for="sample3" class="form-label">Tipo de receta:</label>
+                <select class="form-select" multiple>
+                    <option selected>...</option>
+                    <option value="1">desayuno</option>
+                    <option value="2">comida</option>
+                    <option value="3">cena</option>
+                    <option value="4">postre</option>
+                    <option value="5">primer plato</option>
+                    <option value="6">segundo plato</option>
+                    <option value="7">entrante</option>
+                    <option value="8">aperitivo</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/tinymce.min.js"></script>
+
+<script>
+    /*
+      tinymce.init({
+            selector: 'textarea'
+        });
+        */
+    
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict'
+        
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+        
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+    
+    const resultadosTags = [
+    {"id":"manzana", "text":"Manzana", "description": "Fruit"},
+    {"id":"banana", "text":"Banana", "description": "Fruit"},
+    {"id":"donut", "text":"Donut", "description": "Sweet"},
+    {"id":"pizza", "text":"Pizza", "description": "Delicious"},
+    {"id":"burger", "text":"Burger", "description": "Meaty"},
+    {"id":"pancake", "text":"Pancake", "description": "Sweet"}
+    ];
+    let tokenAutocomplete3 = new TokenAutocomplete({
+        name: 'sample3',
+        selector: '#sample3',
+        noMatchesText: 'No matching results...',
+        initialSuggestions: resultadosTags
+    });
+    
+</script>
+</body>
+</html>
